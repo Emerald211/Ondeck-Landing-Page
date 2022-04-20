@@ -1,0 +1,408 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 224, 217);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-items li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #6C6C6C;
+}
+
+.buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+#sign-in {
+    background-color: transparent;
+    border: none;
+}
+
+#sign-in:hover {
+    cursor: pointer;
+    
+}
+
+#Try {
+    background-color: rgb(1, 24, 21);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+#Try:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(2, 24, 2);
+    border: 2px solid rgb(2, 19, 2);
+}
+
+.sidenav {
+    display: none;
+}
+
+#bar {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: #eff7fa;
+    min-width: 260px;
+    height: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .item1{
+      display: flex;   
+  }
+
+  .item1 h5 {
+      margin-left: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(2, 37, 20);
+  }
+  
+  .dropdown-items p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -15px;
+    font-size: 0.6rem;
+    margin-left: 30px;
+    color: rgb(2, 51, 28);
+  }
+
+  .container {
+      height: 80vh;
+      padding: 0px 20px;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .container-item1 h2 {
+      font-size: 2.5rem;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .container-item1 p {
+      color: #6C6C6C;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.8rem;
+      margin-top: -20px;
+  }
+
+  .container-item1 button {
+      width: 100px;
+      height: 40px;
+      color: white;
+      background-color: rgb(0, 8, 0);
+      border: none;
+      border-radius: 5px;
+  }
+
+  .container-item1 button:hover {
+      background-color: transparent;
+      cursor: pointer;
+      border: 2px solid rgb(0, 8, 0);
+      color: white;
+  }
+
+  .rating {
+      display: flex;
+      align-items:flex-end;
+      margin-top: 10px;
+  }
+
+
+  
+  .rating img {
+      width: 20px;
+      height: 40px;
+      margin-left: 10px;
+  }
+
+  .ondeck {
+      color: orange;
+  }
+
+  .container-image {
+      width: 21rem;
+      height: 25rem;
+      margin-left: 70px;
+  }
+
+  .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+
+  .footer p {
+    color: #6C6C6C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    
+  }
+
+  .companies {
+      display: flex;
+  }
+
+  .companies img {
+      padding: 20px;
+  }
+
+
+@media screen and (max-width:600px) {
+   .nav-items {
+       display: none;
+   }
+   .buttons {
+       display: none;
+   }
+
+   .nav {
+       padding: 0 10px;
+   }
+
+
+   .sidenav {
+       display: block;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #bar {
+      margin-left: auto;
+      display: block;
+  }
+
+  #sign-in {
+    padding: 8px 8px 8px 32px;
+    color: white;
+    margin-top: 10px;
+  }
+  #Try {
+      background-color: rgb(228, 228, 181);
+      color: rgb(1, 12, 1);
+      font-size: 16px;
+      margin-top: 10px;
+  }
+
+  #Try:hover {
+      border: 2px solid rgb(228, 228, 181) ;
+      background-color: transparent;
+      color: white;
+  }
+
+  .item1 h5  {
+      font-size: 10px;
+      color: white;
+  }
+
+  .dropdown-items p {
+      color: white;
+  }
+
+  .container{
+      display: flex;
+      padding: 0px 20px;
+      height: 70vh;
+      
+    }
+
+  .container-image {
+      display: none;
+  }
+
+  .container-item1 h2 {
+      font-size: 1.5rem;
+  }
+
+  .container-item1 p {
+    margin-top: -10px;
+  }
+
+  .rating {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+  }
+  .rating p {
+      font-size: 0.6rem;
+      margin: 0;
+  }
+
+  .rating img {
+      width: 15px;
+      height: 10px;
+  }
+
+  .companies {
+      margin-top: 20px;
+  }
+
+  .companies img {
+      width: 80px;
+      padding: 5px;
+  }
+
+  .developer {
+    font-size: 0.5rem !important;   
+   }
+   
+  
+}
+
+@media screen and (min-width:620px) and (max-width:950px) {
+    .nav {
+        padding: 0 5px;
+    }
+
+    .nav-items a {
+        text-decoration: none;
+        color: #6C6C6C;
+        font-size: 0.5rem;
+    }
+
+    .container {
+        padding: 0px 20px;
+    }
+
+    .container-image {
+        width: 15rem;
+        height: 18rem;
+        margin-left: 70px;
+    }
+
+    .container-item1 h2 {
+        font-size: 1.8rem;
+    }
+
+    .container-item1 p {
+        font-size: 0.6rem;
+    }
+
+    .rating img {
+        width: 15px;
+        height: 10px;
+    }
+
+    .rating p {
+        font-size: 0.6rem;
+        margin: 0;
+    }
+
+    
+  .companies {
+    margin-top: 20px;
+}
+
+.companies img {
+    width: 80px;
+    padding: 5px;
+}
+
+
+
+  
+}
+
+
+@media screen and (max-width:290px) {
+    .companies {
+        margin-top: 20px;
+    }
+    
+    .companies img {
+        width: 40px;
+        padding: 5px;
+    }
+
+    .fold{
+        font-size: 0.6rem !important;
+    }
+}

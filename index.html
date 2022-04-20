@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css ">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <nav class="nav">
+            <img src="Assets/Logo.svg" alt="">
+            <ul class="nav-items">
+             <li onclick="myFunction()" class="dropbtn">
+                <a class="dropbtn" href="#">Products</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="dropdown-items">
+                        <div class="item1">
+                            <img src="Assets/Spense_Icon.svg" alt="">
+                            <h5>Spense</h5>
+                        </div>
+                        <p>Spense is a landing page for writers.Great for <br> praticing absolute positioning and flex-layouts.</p>
+                    </div>
+
+                    <div class="dropdown-items">
+                        <div class="item1">
+                            <img src="Assets/Fiber_Icon.svg" alt="">
+                            <h5>Fiber Landing Page</h5>
+                        </div>
+                        <p>An online portfolio generator. Great to practice <br> flex grids/layout and absolute positioning </p>
+                    </div>
+
+                    <div class="dropdown-items">
+                        <div class="item1">
+                            <img src="Assets/Gradie_Icon.svg" alt="">
+                            <h5>Gradie Sign up Page</h5>
+                        </div>
+                        <p>Gradie is a simple sign up page, great to<br> pratice centering layout </p>
+                    </div>
+                    
+                  </div>
+            </li>
+                <li><a onclick="goTo()" href="">Challenges</a></li>
+                <li><a onclick="goTo()" href="">Resources</a></li>
+                <li><a onclick="goTo()" href="">Other Links</a></li>
+            </ul>
+            <div class="buttons">
+                <button onclick="goTo()" id="sign-in">Sign in</button>
+                <button onclick="goTo()" id="Try">Try for free</button>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#"><details>
+                    <summary>Products</summary>
+                    <div class="dropdown-items">
+                        <div onclick="goTo()" class="item1">
+                            <img src="Assets/Spense_Icon.svg" alt="">
+                            <h5>Spense</h5>
+                        </div>
+                        <p>Spense is a landing page for writers.Great for <br> praticing absolute positioning and flex-layouts.</p>
+                    </div>
+
+                    <div class="dropdown-items">
+                        <div onclick="goTo()" class="item1">
+                            <img src="Assets/Fiber_Icon.svg" alt="">
+                            <h5>Fiber Landing Page</h5>
+                        </div>
+                        <p>An online portfolio generator. Great to practice <br> flex grids/layout and absolute positioning </p>
+                    </div>
+
+                    <div class="dropdown-items">
+                        <div onclick="goTo()" class="item1">
+                            <img src="Assets/Gradie_Icon.svg" alt="">
+                            <h5>Gradie Sign up Page</h5>
+                        </div>
+                        <p>Gradie is a simple sign up page, great to<br> pratice centering layout </p>
+                    </div>
+                </details></a>
+                <a onclick="goTo()" href="#">Challenges</a>
+                <a onclick="goTo()" href="#">Resources</a>
+                <a onclick="goTo()" href="#">Other Links</a>
+                <button onclick="goTo()" id="sign-in">Sign in</button>
+                <button onclick="goTo()" id="Try">Try for free</button>
+            </div>
+            <span id="bar" onclick="openNav()"><i class="fas fa-bars"></i></span>
+        </nav>
+
+        <!-- cover section -->
+        <div class="container">
+            <div class="container-item1">
+                <h2>Ondeck is your remote <br><span class="ondeck"> conferencing calling tool.</span></h2>
+                <p>Ondeck is a service that allows you to create beautiful online and encrypted video calls for <br> you and your remote team</p>
+                <button onclick="goTo()" id="Try">Try for free</button>
+                <div class="rating">
+                    <p>5.0 Rating based on reviews from:</p>
+                    <div class="icons">
+                        <img src="Assets/Capterra Logo.svg" alt="">
+                        <img src="Assets/AlternativeTo Logo.svg" alt="">
+                        <img src="Assets/Shopify Logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <img class="container-image" src="Assets/Hero Image.png" alt="">
+            
+        </div>
+
+        <div class="footer">
+            <p class="fold">Trusted by 3+ million people at companies like</p>
+            <div class="companies">
+                <img src="Assets/Netflix Logo.svg" alt="">
+                <img src="Assets/Spotify Logo.svg" alt="">
+                <img src="Assets/Shopify Logo.svg" alt="">
+                <img src="Assets/Walmart Logo.svg" alt="">
+            </div>
+
+            <p class="developer">Copyright Reserved || Developed by Emmanuel Aderibigbe</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
